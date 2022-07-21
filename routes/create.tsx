@@ -2,7 +2,6 @@
 import { h } from "preact";
 import { tw } from "@twind";
 
-import { DB } from "DB";
 import { Handlers, PageProps } from "$fresh/server.ts";
 
 import Button from "../islands/Button.tsx";
