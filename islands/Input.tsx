@@ -5,7 +5,9 @@ import { tw } from "@twind";
 type InputProps = {
   disabled?: boolean;
   id?: string;
+  name?: string;
   readOnly?: boolean;
+  required?: boolean;
   textAlign?: "left" | "center" | "right";
   type?: "text" | "password" | "number";
 };
@@ -13,7 +15,9 @@ type InputProps = {
 export default function Input({
   disabled = false,
   id,
+  name,
   readOnly = false,
+  required = false,
   textAlign = "left",
   type = "text",
 }: InputProps) {
@@ -24,7 +28,9 @@ export default function Input({
       class={input}
       disabled={disabled}
       id={id}
+      name={name}
       readOnly={readOnly}
+      required={required}
       type={type}
     />
   );
